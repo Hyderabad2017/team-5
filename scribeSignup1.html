@@ -120,65 +120,50 @@
 	                            </div>
 
 	                            <div class="form-bottom">
-				                    <form role="form1" action="" method="post" class="registration-form">
+				                    <form role="form1" action="scribesignup.php" method="post" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-suname">User name</label>
-				                        	<input type="text" name="form-suname" placeholder="Username..." class="form-suname form-control" id="form-suname" value="">
+				                        	<input type="text" name="name" placeholder="Username..." class="form-suname form-control" id="name" value="">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-semail">Email</label>
-				                        	<input type="text" name="form-semail" placeholder="Email..." class="form-semail form-control" id="form-semail" value="">
+				                        	<input type="text" name="email" placeholder="Email..." class="form-semail form-control" id="email" value="">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-spassword">Password</label>
-				                        	<input type="text" name="form-spassword" placeholder="Password..." class="form-spassword form-control" id="form-spassword" value="">
+				                        	<input type="text" name="password" placeholder="Password..." class="form-spassword form-control" id="password" value="">
 				                        </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-srepassword">Re typePassword</label>
-                                            <input type="text" name="form-srepassword" placeholder="Retype Password..." class="form-srepassword form-control" id="form-srepassword" value="">
+                                            <input type="text" name="repassword" placeholder="Retype Password..." class="form-srepassword form-control" id="repassword" value="">
                                         </div>
-				                        <div class="form-group">
-										<label class="sr-only" for="qualification">&nbsp;Qualification</label>
-                                           
-											<select name="qualification" >
-		
 
-		<option value="Qualification">Qualification</option>
-
-		<option value="10th" >10th</option>
-
-		<option value="12th" >12th</option>
-		
-		<option value="Diploma" >Diploma</option>
-			
-	        <option value="B.Tech" >B.Tech</option>
-				
-               
-			
-</select> 
-										</div>
+										<div class="form-group">
+                                            <label class="sr-only" for="form-srepassword">Qualification</label>
+                                            <input type="text" name="qualification" placeholder="Qualification..." class="form-srepassword form-control" id="qualification" value="">
+                                        </div>
 										<div class="form-group">
 											<label class="sr-only" for="form-contact">Contact Number</label>
-				                        	<input type="text" name="form-contact" placeholder="Contact Number..." class="form-contact form-control" id="form-contact" value="">
+				                        	<input type="text" name="contact" placeholder="Contact Number..." class="form-contact form-control" id="contact" value="">
 				                        <br>
 										</div>
 										<div class="form-group">
 											<label class="sr-only" for="form-altContact"> Alternate Contact Number</label>
-				                        	<input type="text" name="form-altcontact" placeholder="Alternate Contact Number..." class="form-altcontact form-control" id="form-altcontact" value="">
+				                        	<input type="text" name="alternatec" placeholder="Alternate Contact Number..." class="form-altcontact form-control" id="alternatec" value="">
 				                        <br>
 										</div>
 										<div class="form-group">
-                                            <label class="sr-only" for="form-lang1">language-1</label>
-                                            <input type="text" name="form-lang1" placeholder="language-1" class="form-lang1 form-control" id="form-lang1" value="">
-                                            <input type="radio" name="lang1" value="read"> Read<br>
-  <input type="radio" name="lang1" value="write"> Write<br>
-  <input type="radio" name="lang1" value="both">Both
-                                        </div>
-										<div class="form-group">
 				                        	<label class="sr-only" for="form-city">City</label>
-				                        	<input type="text" name="form-city" placeholder="City..." class="form-city form-control" id="form-city" value="">
+				                        	<input type="text" name="location" placeholder="City..." class="form-city form-control" id="location" value="">
 				                        </div>
-										
+										<div class="form-group">
+				                        	<label class="sr-only" for="form-POC1">POC1</label>
+				                        	<input type="text" name="language1" placeholder="Primary Point of Contact(name and contact number)..." class="form-POC1 form-control" id="language1" value="">
+				                        </div>
+										<div class="form-group">
+				                        	<label class="sr-only" for="form-SecPOC2">POC2</label>
+				                        	<input type="text" name="language2" placeholder="Secondary Point of Contact(name and contact number)..." class="form-POC2 form-control" id="language2" value="">
+				                        </div>
 				                        <button type="submit" class="btn" onclick="validateSignUp()">Sign me up!</button>
 										
 										<div>
