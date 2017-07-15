@@ -147,8 +147,8 @@
                                             <label class="sr-only" for="form-lang">language-2</label>
                                             <input type="text" name="form-lang2" placeholder="language-2" class="form-lang2 form-control" id="form-lang2" value="">
                                             <input type="radio" name="lang2" value="read"> Read<br>
-  <input type="radio" name="lang2" value="write"> Write<br>
-  <input type="radio" name="lang2" value="both">Both
+                                            <input type="radio" name="lang2" value="write"> Write<br>
+                                            <input type="radio" name="lang2" value="both">Both
                                         </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-exam">Exam</label>
