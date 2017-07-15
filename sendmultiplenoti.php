@@ -1,5 +1,7 @@
-
-
+<html>
+<body background="./assets/img/backgrounds/1.jpg">
+<body>
+</html>
 <?php
     /* Send an SMS using Twilio. You can run this file 3 different ways:
      *
