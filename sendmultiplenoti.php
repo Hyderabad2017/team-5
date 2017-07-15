@@ -1,6 +1,17 @@
 <html>
+
+    <head>
+    <style>
+
+
+h2 {
+    text-align: left;
+}
+</style>
+</head>
 <body background="./assets/img/backgrounds/1.jpg">
 					<div class="row">
+                    <h2>  <a href="index.html"><b><u>BACK TO HOME<u></b> </a></h2>
                         <div class="col-sm-8 col-sm-offset-2 text">
                             <br><br><h1><strong><center><font color="white"> The Scribes are notified.<br>You will be notified when a Scribe is found.<br>Thank you!!</font></center></strong></h1>
                             
@@ -62,7 +73,7 @@
         );
 
         // Display a confirmation message on the screen
-        echo "Sent message to $name";
+        //echo "Sent message to $name";
     }
 
 
