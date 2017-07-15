@@ -134,7 +134,7 @@
                                             <label class="sr-only" for="form-contanct">loc</label>
                                             <input type="text" name="form-contanct" placeholder="contact" class="form-contact form-control" id="form-contact" value="">
                                         </div>
-                                        
+                                        </br>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-lang1">language-1</label>
                                             <input type="text" name="form-lang1" placeholder="language-1" class="form-lang1 form-control" id="form-lang1" value="">

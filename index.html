@@ -3,14 +3,30 @@
 
     <head>
      <script >
-        
+        function validateSignIn()
+        {
+           
+             var u =document.getElementById('form-username').value;
+             //alert("aas"+u);   
+            if(u ==="")
+             {
+             alert("enter username");
+             }  
+              var p=document.getElementById('form-password').value;
+             if(p ==="")
+             {
+             alert("enter password");
+             }  
+
+
+        }
         function validateSignUp()
         {
             var u =document.getElementById('form-suname').value;
              //alert("aas"+u);   
             if(u ==="")
              {
-             alert("enter name");
+             alert("enter username");
              }  
 
              var e=document.getElementById('form-semail').value;
@@ -91,19 +107,61 @@
                 	
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong> </strong></h1>
+                            <h1><strong> Login &amp; Register Forms</strong></h1>
                             <div class="description">
                             	<p>
-	                            	<b>REQUEST FOR SCRIBE</b>
+	                            	students create ur account
                             	</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="row">
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter username and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-key"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="studentsignin.php" method="post" class="login-form" >
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username" value="">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" value="">
+				                        </div>
+				                        <button type="submit" class="btn" onclick="validateSignIn()">Sign in!</button>
+				                    </form>
+			                    </div>
+		                    </div>
+		                
+		                	<div class="social-login">
+	                        	<h3>...or login with:</h3>
+	                        	<div class="social-login-buttons">
+		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
+		                        		<i class="fa fa-facebook"></i> Facebook
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
+		                        		<i class="fa fa-twitter"></i> Twitter
+		                        	</a>
+		                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+		                        		<i class="fa fa-google-plus"></i> Google Plus
+		                        	</a>
+	                        	</div>
+	                        </div>
+	                        
+                        </div>
                         
-                        
-                       
+                        <div class="col-sm-1 middle-border"></div>
                         <div class="col-sm-1"></div>
                         	
                         <div class="col-sm-5">
@@ -120,52 +178,25 @@
 	                            </div>
 
 	                            <div class="form-bottom">
-				                    <form role="form1" action="singupp.php" method="post" class="registration-form">
+				                    <form role="form1" action="" method="post" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-suname">User name</label>
 				                        	<input type="text" name="form-suname" placeholder="Username..." class="form-suname form-control" id="form-suname" value="">
 				                        </div>
-
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-semail">Email</label>
 				                        	<input type="text" name="form-semail" placeholder="Email..." class="form-semail form-control" id="form-semail" value="">
 				                        </div>
-                                        <div class="form-contact">
-                                            <label class="sr-only" for="form-contanct">loc</label>
-                                            <input type="text" name="form-contanct" placeholder="contact" class="form-contact form-control" id="form-contact" value="">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-lang1">language-1</label>
-                                            <input type="text" name="form-lang1" placeholder="language-1" class="form-lang1 form-control" id="form-lang1" value="">
-                                            <input type="radio" name="lang1" value="read"> Read<br>
-  <input type="radio" name="lang1" value="write"> Write<br>
-  <input type="radio" name="lang1" value="both">Both
-                                        </div>
-
-                                        
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-exam">Exam</label>
-				                        	<input type="text" name="form-spassword" placeholder="Exam" class="form-exam
-                                             form-control" id="form-exam" value="">
+				                        	<label class="sr-only" for="form-spassword">Password</label>
+				                        	<input type="text" name="form-spassword" placeholder="Password..." class="form-spassword form-control" id="form-spassword" value="">
 				                        </div>
-                                         <div class="form-group">
-                                            <label class="sr-only" for="form-date">date</label>
-                                            <input type="text" name="form-date" placeholder="date" class="form-date
-                                             form-control" id="form-date" value="">
-                                        </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="form-altcon">altcon</label>
-                                            <input type="text" name="form-altcon" placeholder="alternative contact" class="form-altcon form-control" id="form-altcon" value="">
+                                            <label class="sr-only" for="form-srepassword">Re typePassword</label>
+                                            <input type="text" name="form-srepassword" placeholder="Retype Password..." class="form-srepassword form-control" id="form-srepassword" value="">
                                         </div>
-                                        
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-loc">loc</label>
-                                            <input type="text" name="form-loc" placeholder="Location" class="form-loc form-control" id="form-loc" value="">
-                                        </div>
-                                        
 				                        
-				                        <button type="submit" class="btn" onclick="validateSignUp()">Request for scribe</button>
+				                        <button type="submit" class="btn" onclick="validateSignUp()">Sign me up!</button>
 				                    </form>
 			                    </div>
                         	</div>
