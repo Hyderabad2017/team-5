@@ -30,7 +30,7 @@
     // Feel free to change/add your own phone number and name here.
     $people = array(
         "+917680974517" => "Sai keerthana",
-        "+15558675308" => "Boots",
+        "+919494947784" => "sowmya",
         "+15558675307" => "Virgil"
     );
 
