@@ -20,53 +20,8 @@
 
 
         }
-        function validateSignUp()
-        {
-            var u =document.getElementById('form-suname').value;
-             //alert("aas"+u);   
-            if(u ==="")
-             {
-             alert("enter username");
-             }  
-
-             var e=document.getElementById('form-semail').value;
-              if(e ==="")
-             {
-             alert("enter email");
-             }  
-             else
-             {
-                var atpos = e.indexOf("@");
-             var dotpos = e.lastIndexOf(".");
-            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length) 
-            {
-                alert("Not a valid e-mail address");
-       
-                }
-            }
-
-             var p=document.getElementById('form-spassword').value;
-             if(p ==="")
-             {
-             alert("enter password");
-             }  
-             var r=document.getElementById('form-srepassword').value;
-             if(r ==="")
-             {
-                alert("enter password again");
-             }
-             if(p!==r)
-             {
-                alert("passwords dont match");
-
-             }
-             else
-             {
-                if (p.length<5) {
-                    alert("password length min 5");
-                }
-             }
-        }
+        
+        
     </script>
 
         <meta charset="utf-8">
@@ -119,7 +74,7 @@
                     <div class="row">
                         <div class="col-sm-5">
                         	
-                        	<div class="form-box">
+                        	<div class="form-box" >
 	                        	<div class="form-top">
 	                        		<div class="form-top-left">
 	                        			<h3>Login to our site</h3>
@@ -140,68 +95,29 @@
 				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" value="">
 				                        </div>
 				                        <button type="submit" class="btn" onclick="validateSignIn()">Sign in!</button>
+															
 				                    </form>
-			                    </div>
+									
+											
+			                    </div><br>
+								<form>
+								<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Not an exiting member??</h3>
+	                            		<p>Create an account..</p>
+										<button type="submit" class="btn" onclick="scribeSignup">Create Account</button>
+	                        		</div>
+								</div>
+								</form>
 		                    </div>
 		                
-		                	<div class="social-login">
-	                        	<h3>...or login with:</h3>
-	                        	<div class="social-login-buttons">
-		                        	<a class="btn btn-link-1 btn-link-1-facebook" href="#">
-		                        		<i class="fa fa-facebook"></i> Facebook
-		                        	</a>
-		                        	<a class="btn btn-link-1 btn-link-1-twitter" href="#">
-		                        		<i class="fa fa-twitter"></i> Twitter
-		                        	</a>
-		                        	<a class="btn btn-link-1 btn-link-1-google-plus" href="#">
-		                        		<i class="fa fa-google-plus"></i> Google Plus
-		                        	</a>
-	                        	</div>
-	                        </div>
 	                        
                         </div>
                         
-                        <div class="col-sm-1 middle-border"></div>
-                        <div class="col-sm-1"></div>
+                        
                         	
-                        <div class="col-sm-5">
-                        	
-                        	<div class="form-box">
-                        		<div class="form-top">
-	                        		<div class="form-top-left">
-	                        			<h3>Sign up now</h3>
-	                            		<p>Fill in the form below to get instant access:</p>
-	                        		</div>
-	                        		<div class="form-top-right">
-	                        			<i class="fa fa-pencil"></i>
-	                        		</div>
-	                            </div>
-
-	                            <div class="form-bottom">
-				                    <form role="form1" action="" method="post" class="registration-form">
-				                    	<div class="form-group">
-				                    		<label class="sr-only" for="form-suname">User name</label>
-				                        	<input type="text" name="form-suname" placeholder="Username..." class="form-suname form-control" id="form-suname" value="">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-semail">Email</label>
-				                        	<input type="text" name="form-semail" placeholder="Email..." class="form-semail form-control" id="form-semail" value="">
-				                        </div>
-				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-spassword">Password</label>
-				                        	<input type="text" name="form-spassword" placeholder="Password..." class="form-spassword form-control" id="form-spassword" value="">
-				                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-srepassword">Re typePassword</label>
-                                            <input type="text" name="form-srepassword" placeholder="Retype Password..." class="form-srepassword form-control" id="form-srepassword" value="">
-                                        </div>
-				                        
-				                        <button type="submit" class="btn" onclick="validateSignUp()">Sign me up!</button>
-				                    </form>
-			                    </div>
-                        	</div>
-                        	
-                        </div>
+                       
+                        
                     </div>
                     
                 </div>
@@ -214,8 +130,6 @@
         	<div class="container">
         		<div class="row">
         			
-        			<div class="col-sm-8 col-sm-offset-2">
-        				<div class="footer-border"></div>
         			
         		</div>
         	</div>
