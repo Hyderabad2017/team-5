@@ -1,3 +1,8 @@
+<html>
+<body background="./assets/img/backgrounds/1.jpg">
+<h1>Thankyou, for your response.That's a great contribution</h1>
+</body>
+</html>
 <?php
 // Required if your environment does not handle autoloading
 require __DIR__ . '/vendor/autoload.php';
