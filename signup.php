@@ -211,4 +211,3 @@
 </html>
 <?php
 echo "hi";
-?>
