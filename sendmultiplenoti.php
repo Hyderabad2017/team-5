@@ -1,5 +1,11 @@
 <html>
 <body background="./assets/img/backgrounds/1.jpg">
+					<div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong> The Scribes are notified.<br>You will be notified when a Scribe is found.<br>Thank you!!</strong></h1>
+                            
+                        </div>
+                    </div>
 <body>
 </html>
 <?php
