@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDwnvc9bY-ND6eXjWw0iYOktMGoqJvMEiI",
+            authDomain: "codeforgood-a45fd.firebaseapp.com",
+            databaseURL: "https://codeforgood-a45fd.firebaseio.com",
+            projectId: "codeforgood-a45fd",
+            storageBucket: "codeforgood-a45fd.appspot.com",
+            messagingSenderId: "115836745359"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+        function writeUserData() {
+            var uname = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('form-spassword').value;
+            var obj = document.getElementById('select');
+            var qualifications = obj.options[obj.selectedIndex].text;
+            var contact = document.getElementById('form-contact').value;
+            var city = document.getElementById('form-city').value;
+            var language1 = document.getElementById('form-lang').value;
+            var lang = document.getElementsByName('lang');
+            var language2;
+            for (i = 0; i < lang.length; i++) {
+                if (lang[i].checked) {
+                    language2 = lang[i].value;
+                }
+            }
+            var database = firebase.database().ref();
+            var store = database.child('registrations');
+            var newstore = store.push();
+            newstore.set({
+                username: uname,
+                email: email,
+                password: password,
+                qualifications: qualifications,
+                contact: contact,
+                city: city,
+                language1: language1,
+                language2: language2
+            });
+            console.log(language2);
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribe Registration</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+    <!-- Top content -->
+    <div class="top-content">
+
+        <div class="inner-bg">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1><strong> Scribe Register</strong></h1>
+                        <div class="description">
+                            <p>
+                                Scribe Signup!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+
+
+                    <div class="col-sm-1"></div>
+
+                    <div class="col-sm-5">
+
+                        <div class="form-box">
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                    <h3>Sign up now</h3>
+                                    <p>Fill in the form below to get instant access:</p>
+                                </div>
+                                <div class="form-top-right">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-bottom">
+                                <form role="form1" action="" method="post" class="registration-form">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-suname">User name</label>
+                                        <input type="text" name="form-suname" placeholder="Username..." class="form-suname form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-semail">Email</label>
+                                        <input type="text" name="form-semail" placeholder="Email..." class="form-semail form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-spassword">Password</label>
+                                        <input type="text" name="form-spassword" placeholder="Password..." class="form-spassword form-control" id="form-spassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-lang">Password</label>
+                                        <input type="text" name="form-lang" placeholder="language" class="form-lang form-control" id="form-lang">
+                                        <input type="radio" name="lang" value="read">READ <br>
+                                        <input type="radio" name="lang" value="write">WRITE <br>
+                                        <input type="radio" name="lang" value="both">BOTH <br>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="qualification">&nbsp;Qualification</label>
+
+                                        <select name="qualification" id="select">
+		
+
+		<option value="Qualification">Qualification</option>
+
+		<option value="10th" >10th</option>
+
+		<option value="12th" >12th</option>
+		
+		<option value="Diploma" >Diploma</option>
+			
+	        <option value="B.Tech" >B.Tech</option>
+				
+               
+			
+</select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-contact">Contact Number</label>
+                                        <input type="text" name="form-contact" placeholder="Contact Number..." class="form-contact form-control" id="form-contact">
+                                        <br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-altContact"> Alternate Contact Number</label>
+                                        <input type="text" name="form-altcontact" placeholder="Alternate Contact Number..." class="form-altcontact form-control" id="form-altcontact">
+                                        <br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-city">City</label>
+                                        <input type="text" name="form-city" placeholder="City..." class="form-city form-control" id="form-city">
+                                    </div>
+                                    <button type="submit" class="btn" onclick="writeUserData()">Sign me up!</button>
+
+                                    <div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="footer-border"></div>
+
+                </div>
+            </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>
