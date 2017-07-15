@@ -56,9 +56,9 @@ h2 {
     // Step 5: Loop over all our friends. $number is a phone number above, and 
     // $name is the name next to it
     foreach ($people as $number => $name) {
-
+	$url="http://54.255.152.199/team-5/iandeye/team-5/button.html";
         $sms = $client->account->messages->create(
-
+		
             // the number we are sending to - Any phone number
             $number,
 
@@ -68,7 +68,7 @@ h2 {
                 'from' => "+12679301379", 
                 
                 // the sms body
-                'body' => "Hey $name, Monkey Party at 6PM. Bring Bananas!"
+                'body' => "Hey $name,Please conform your acceptance as scribe.$url"
             )
         );
 
