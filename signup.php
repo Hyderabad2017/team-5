@@ -45,6 +45,8 @@
 
              }
              else
+        <title>Bootstrap Login &amp; Register Templates</title>
+
              {
                 if (p.length<5) {
                     alert("password length min 5");
@@ -56,8 +58,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap Login &amp; Register Templates</title>
-
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -134,7 +134,7 @@
                                             <label class="sr-only" for="form-contanct">loc</label>
                                             <input type="text" name="form-contanct" placeholder="contact" class="form-contact form-control" id="form-contact" value="">
                                         </div>
-                                        
+                                        </br>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-lang1">language-1</label>
                                             <input type="text" name="form-lang1" placeholder="language-1" class="form-lang1 form-control" id="form-lang1" value="">
@@ -143,7 +143,13 @@
   <input type="radio" name="lang1" value="both">Both
                                         </div>
 
-                                        
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-lang">language-2</label>
+                                            <input type="text" name="form-lang2" placeholder="language-2" class="form-lang2 form-control" id="form-lang2" value="">
+                                            <input type="radio" name="lang2" value="read"> Read<br>
+  <input type="radio" name="lang2" value="write"> Write<br>
+  <input type="radio" name="lang2" value="both">Both
+                                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-exam">Exam</label>
 				                        	<input type="text" name="form-spassword" placeholder="Exam" class="form-exam
@@ -203,3 +209,5 @@
     </body>
 
 </html>
+<?php
+echo "hi";
