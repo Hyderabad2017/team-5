@@ -7,6 +7,7 @@
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
 </script>
+
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,19 +30,24 @@
         <h2>Dynamic Tabs</h2>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Register</a></li>
-            <li><a data-toggle="tab" href="#home">request scribe</a></li>
-            <li><a data-toggle="tab" href="#home">conf</a></li>
+            <li><a data-toggle="tab" href="signup.html" target="iframe1">request scribe</a></li>
+            <li><a data-toggle="tab" href="thankyou.html" target="iframe1">conf</a></li>
         </ul>
     </div>
+	
+	<iframe name="iframe1"  id="link" width="600" height="500"/></iframe>
+
+	
     <div id="home" class="tab-pane fade in active" style="overflow:hidden">
-        <iframe src="index.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" /></iframe>
+        
     </div>
-    <div id="menu1" class="tab-pane fade" style="overflow: hidden;">
+    <div id="menu1" class="tab-pane fade" style="overflow: hidden;" onload="check()">
+    
        
     </div>
     <div id="menu2" class="tab-pane fade" style="overflow: hidden;">
         <h3>Menu 2</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        
     </div>
 </body>
 
