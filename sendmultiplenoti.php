@@ -50,7 +50,7 @@ h2 {
     $people = array(
         "+917680974517" => "Sai keerthana",
         "+919494947784" => "Sowmya",
-        "+919030541768" => "Sharath"
+        "+919030541768" => "Nagendra sir"
     );
 
     // Step 5: Loop over all our friends. $number is a phone number above, and 
