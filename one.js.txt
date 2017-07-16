@@ -1,0 +1,62 @@
+ var database = firebase.database().ref();
+ var newstore;
+
+ function UserData() {
+     console.log("hi");
+     var uname = document.getElementById('form-suname').value;
+     var contact = document.getElementById('form-contact').value;
+     var language1 = document.getElementById('form-lang1').value;
+     var lang = document.getElementsByName('lang1');
+     var language2;
+     for (i = 0; i < lang.length; i++) {
+         if (lang[i].checked) {
+             language2 = lang[i].value;
+         }
+     }
+     console.log(language2);
+     var exam = document.getElementById('form-exam').value;
+     var date = document.getElementById('form-date').value;
+     var location = document.getElementById('form-loc').value;
+     newref = database.child('users').push();
+     newref.set({
+         username: uname,
+         contact: contact,
+         language1: language1,
+         language2: language2,
+         exam: exam,
+         date: date,
+         location: location
+     });
+     console.log(language2);
+ }
+
+ function writeUserData() {
+     var uname = document.getElementById('name').value;
+     var email = document.getElementById('email').value;
+     var password = document.getElementById('form-spassword').value;
+     var obj = document.getElementById('select');
+     var qualifications = obj.options[obj.selectedIndex].text;
+     var contact = document.getElementById('form-contact').value;
+     var city = document.getElementById('form-city').value;
+     var language1 = document.getElementById('form-lang').value;
+     var lang = document.getElementsByName('lang');
+     var language2;
+     for (i = 0; i < lang.length; i++) {
+         if (lang[i].checked) {
+             language2 = lang[i].value;
+         }
+     }
+     var store = database.child('registrations');
+     newstore = store.push();
+     newstore.set({
+         username: uname,
+         email: email,
+         password: password,
+         qualifications: qualifications,
+         contact: contact,
+         city: city,
+         language1: language1,
+         language2: language2
+     });
+     console.log(language2);
+ }
