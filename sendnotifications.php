@@ -1,7 +1,7 @@
 <html>
 <body background="./assets/img/backgrounds/1.jpg">
 <center>
-<p></p>
+<p> <h2>  <a href="index.html"><b><u>BACK TO HOME<u></b> </a></h2></p>
 <center>
 </body>
 </html> 
