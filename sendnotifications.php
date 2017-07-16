@@ -25,6 +25,6 @@
         // A Twilio phone number you purchased at twilio.com/console
         'from' => '+12679301379',
         // the body of the text message you'd like to send
-        'body' => 'Hey Keerthana welcome to twilio!!'
+        'body' => 'A scribe has accepted your notification go to your profile to check the details '
     )
 );
