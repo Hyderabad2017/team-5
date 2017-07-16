@@ -49,8 +49,8 @@ h2 {
     // Feel free to change/add your own phone number and name here.
     $people = array(
         "+917680974517" => "Sai keerthana",
-        "+919494947784" => "sowmya",
-        "+15558675307" => "Virgil"
+        "+919494947784" => "Sowmya",
+        "+919030541768" => "Sharath"
     );
 
     // Step 5: Loop over all our friends. $number is a phone number above, and 
@@ -68,7 +68,7 @@ h2 {
                 'from' => "+12679301379", 
                 
                 // the sms body
-                'body' => "Hey $name,Please conform your acceptance as scribe.$url"
+                'body' => "Hey $name,Please conform your acceptance as scribe. $url"
             )
         );
 
